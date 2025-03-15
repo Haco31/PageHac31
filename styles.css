@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+    background-color: #1a1a1a;
+    color: #00ffcc;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #0ff;
+}
+
+header {
+    background-color: #111;
+    color: #0ff;
+    border: 2px solid #0ff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ffcc;
+    font-size: 4px;
+}
+
+nav a:hover, .navbar-form a:hover {
+    color: #ff00ff;
+    text-shadow: 2px 2px 5px #ff00ff;
+}
+
+img {
+
+    image-rendering: pixelated;
+    max-width: 100%
+}
+
+input textarea {
+    background-color: black;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    padding: 5px;
+    font-family: 'Courier Nex', Courier, monospace;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff00ff;
+    outline: none;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: black;
+    color: cyan;
+    border: 2px solid cyan;
+    font-family: 'Silkscreen', cursive;
+}
+
+.card {
+    width: 350px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; background-color: #222;
+    border: 2px solid #0ff;
+}
+
+.card-body {
+    flex-grow: 1;
+    background-color: #111;
+    color: #00ffcc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+
+}
+
+.no-puntos {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+.no-hover {
+    color: white !important;
+    text-shadow: none !important;
+    pointer-events: none;
+}
+
+h1 {
+    font-size: 50px; /* Ajusta el tamaño a tu gusto */
+}
+
+p {
+    font-size: 25px; /* Ajusta según lo necesites */
+    font-family: 'VT323', monospace;
+}
+
+.col-md-6 {
+    margin-top: 30px;
+    margin-bottom: 30px
+}

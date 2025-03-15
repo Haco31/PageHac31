@@ -1,0 +1,106 @@
+1. HTML
+
+Tags Used:
+    - <!DOCTYPE html> → Defines the document type as HTML5.
+    - <html lang="es"> → Specifies the language of the content.
+    - <head> → Contains metadata and links to styles and scripts.
+    - <meta charset="UTF-8"> → Sets the character encoding.
+    - <meta name="viewport" content="width=device-width, initial-scale=1.0"> → Makes the site responsive.
+    - <title> → Defines the page title.
+    - <link> → Used to import Bootstrap and CSS.
+    - <script> → Imports JavaScript.
+    - <header> → Contains the page title.
+    - <nav> → Navigation bar with links.
+    - <ul> and <li> → Lists for navigation and content.
+    - <div> → Containers for content.
+    - <form> → Contact form.
+    - <input> and <textarea> → Form input fields.
+    - <button> → Submit button.
+    - <footer> → Footer with additional information.
+
+
+2. CSS
+
+Layoud and structure
+    - display: flex; → Used to center elements and align the navbar.
+    - justify-content: center; → Centers elements horizontally.
+    - align-items: center; → Ensures vertical alignment.
+    - width: 100%; → Makes elements take up the full available width.
+    - max-width: 500px; → Defines a maximum width for certain containers.
+    - border: 2px solid cyan; → Used to give elements a retro style.
+    - border-radius: 10px; → Rounds the edges of elements.
+    - padding and margin → Adjusts spacing.
+
+Colors and typography
+    - background-color: #111; → Dark retro background.
+    - color: #00ffcc; → Cyan text, matching the pixel-art aesthetic.
+    - font-family: 'Press Start 2P', cursive; → Pixelated font for a retro look.
+
+Effects
+    - transition: 0.2s; → Button animations.
+    - text-shadow: 2px 2px 5px #ff00ff; → Glowing text effect on hover.
+    - transform: scale(0.9); → Button shrink effect when clicked.
+
+
+3. Bootstrap
+
+Components used
+    - navbar navbar-expand-lg navbar-dark bg-dark → Responsive navigation bar.
+    - container → Organizes content inside the navbar.
+    - navbar-toggler → Mobile menu button.
+    - collapse navbar-collapse → Makes navigation expandable on mobile.
+    - btn btn-primary → Default Bootstrap button style.
+
+
+4. JavaScript
+
+Implemented functions:
+ * Contact form validation
+
+    function validarFormulario() {
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    if (nombre === "" || email === "" || mensaje === "") {
+        alert("Please fill in all fields.");
+        return false;
+    }
+    alert("Message sent successfully!");
+    return true;
+}
+
+    - document.getElementById("nombre").value; → Retrieves the value entered in the form fields.
+    -  if (nombre === "" || email === "" || mensaje === "") {} → Checks if any field is empty.
+    - alert("Message sent successfully!"); → Displays a pop-up message if validation passes.
+    - return false; → Prevents submission if fields are empty.
+
+
+5. Responsiveness (Adaptive Design)
+ * Adjustments for mobile and different screen sizes:
+
+    @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-form {
+        width: 90%;
+    }
+}
+
+    - @media (max-width: 768px) {} → Applies styles for small screens.
+    - flex-direction: column; → Stacks navbar elements vertically on mobile.
+    - width: 90%; → Reduces container size on small screens.
+
+
+Conclusion:
+
+in these files you can evidence the analysis and study of the
+technologies used in the project, explaining how Bootstrap and
+JavaScript were applied in HTML and CSS, in order to achieve a
+page with retro aesthetics that recalls the early years of the
+internet. Ready for review!
